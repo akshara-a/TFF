@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Schedule</title>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<style>
+  .table-title {
+    color: rgb(4, 5, 88);
+    font-size: 58px;
+    font-size: 42px;
+    font-weight: bolder;
+
+  }
+
+  .table thead th {
+    color: #ffffff;
+    background-color:rgb(4, 5, 88);
+    /* z-index: 1000; */
+
+  }
+
+  .table-hover tbody tr:hover td,
+  .table-hover tbody tr:hover th {
+    background-color:rgba(4, 5, 88, 0.568);
+    color: white;
+    transition: 0.5s;
+  }
+
+  .tableFixHead {
+    overflow-y: auto;
+    height: 54rem;
+  }
+
+  .tableFixHead thead th {
+    position: sticky;
+    top: 0;
+  }
+
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 8px 16px;
+  }
+
+  th {
+    background: #eee;
+  }
+</style>
+
+<body>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="main_page.html" style="width: 200px; font-size: large; text-decoration: none;"> <img src="logo.png" style="height: 40px;border-radius: 110px;width: 50px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Collaboration
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Speakers</a></li>
+              <li><a class="dropdown-item" href="#">Partner Organizations</a></li>
+              <li><a class="dropdown-item" href="team.html">Our team</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Visit
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://tearsoftheearth.org/">TOE</a></li>
+              <li><a class="dropdown-item" href="https://teai.in/">TEAI</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Schedule-->
+  <div class="container my-2 pt-4 pb-4 ">
+    <h1 class="text-center table-title"><u>SCHEDULE</u></h1>
+    <br><br>
+    <div class="tableFixHead">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Date (Feb,2021)</th>
+            <th scope="col">Theme</th>
+            <th scope="col">Session-1</th>
+            <th scope="col">Session-2</th>
+            <th scope="col">Session-3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">12</th>
+            <td>Starting day as introduction</td>
+            <td>Education</td>
+            <td>Technology</td>
+            <td>Space</td>
+          </tr>
+
+          <tr>
+            <th scope="row">13</th>
+            <td>Space Exploration & Sustainability</td>
+            <td>Clean space</td>
+            <td>Space debris</td>
+            <td>Space program & Education</td>
+          </tr>
+
+          <tr>
+            <th scope="row">14</th>
+            <td>Future Agriculture & Food</td>
+            <td>Organic Farming & Food</td>
+            <td>Indoor Farming</td>
+            <td>Farming Technology</td>
+          </tr>
+
+          <tr>
+            <th scope="row">15</th>
+            <td>Future Urban Infrastructure & Living</td>
+            <td>Grey Vs Green Structures</td>
+            <td>Zero Waste Living</td>
+            <td>Environmental Engineering</td>
+          </tr>
+
+          <tr>
+            <th scope="row">16</th>
+            <td>AI Robotics & Mobility</td>
+            <td>Future AI</td>
+            <td>Green Transport</td>
+            <td>Robotics</td>
+          </tr>
+
+          <tr>
+            <th scope="row">18</th>
+            <td>Earth Observation & Monitoring</td>
+            <td>ESPACE & GIS</td>
+            <td>Near Earth Object Monitoring</td>
+            <td>Climate change & disasters</td>
+          </tr>
+
+          <tr>
+            <th scope="row">19</th>
+            <td>Species of Earth & Co-existence</td>
+            <td>Animal Welfare</td>
+            <td>Extinction & Evolution</td>
+            <td>Technical advancements for co-existence</td>
+          </tr>
+
+          <tr>
+            <th scope="row">20</th>
+            <td>Policy, Law, and Governance</td>
+            <td>Local Actions</td>
+            <td>International Cooperation</td>
+            <td>Non-profits</td>
+          </tr>
+
+          <tr>
+            <th scope="row">21</th>
+            <td>Future Education and Innovation</td>
+            <td>STEM Education</td>
+            <td>Environmental Education</td>
+            <td>Research & Innovation Involvement</td>
+          </tr>
+
+          <tr>
+            <th scope="row">22</th>
+            <td>Bio Genetics and Body modification</td>
+            <td>Cyborg</td>
+            <td>Neuralink</td>
+            <td>Mind controlled prosthetics</td>
+          </tr>
+
+          <tr>
+            <th scope="row">23</th>
+            <td>Waste management and plastic problem</td>
+            <td>Waste management</td>
+            <td>Solving the plastic</td>
+            <td>Innovations and Engineering</td>
+          </tr>
+
+          <tr>
+          <th scope="row">25</th>
+            <td>Water consumption and future challenges</td>
+            <td>Drinking water challenges</td>
+            <td>Rivers of the world</td>
+            <td>Oceans</td>
+          </tr>
+
+          <tr>
+            <th scope="row">26</th>
+            <td>Human Involvement and Survival</td>
+            <td>World Peace</td>
+            <td>Multi-skills and abilities</td>
+            <td>Adapting to change</td>
+          </tr>
+
+          <tr>
+            <th scope="row">27</th>
+            <td>Green and Renewable Energy</td>
+            <td>Green cities</td>
+            <td>Renewable Energy Parks</td>
+            <td>Green Nuclear Power</td>
+          </tr>
+
+          <tr>
+            <th scope="row">28</th>
+            <td>Conclusion day</td>
+            <td>Impact</td>
+            <td>Outcome</td>
+            <td>Future</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <br><br>
+  <!-- Footer -->
+  <footer id="contact" style="background-color: rgb(4, 5, 88); color: white">
+      <div class="text-center">
+        <br><br>
+        <h3> <u>Contact Us</u> </h3>
+        <p class="text-center"><i class="fas fa-phone-volume"></i> (+91)9599490594/ (+91)8377820991</p>
+        <p class="text-center"><i class="fas fa-envelope-square"></i> teai@tearsoftheearth.org</p>
+  <br>
+        <i class="fab fa-instagram"></i> 
+        <i class="fab fa-facebook"></i> 
+        <i class="fab fa-reddit"></i> 
+        <i class="fab fa-whatsapp"></i> 
+        <i class="fab fa-telegram"></i> 
+        <i class="fab fa-linkedin"></i> 
+        <br><br>
+      </div>
+  </footer>
+
+</body>
+
+</html>
