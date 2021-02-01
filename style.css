@@ -260,5 +260,5 @@ p {
 /* removing underline attributes from headings */
 
 a:link {
-  text-decoration: none;
+  text-decoration: none !important;
 }
