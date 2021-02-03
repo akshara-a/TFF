@@ -23,13 +23,17 @@
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" rel="stylesheet">
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" rel="stylesheet">
 
+    <!-- On scroll animations-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>TFF</title>
   </head>
   <body>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="main_page.html" style="width: 200px; font-size: large; text-decoration: none;"> <img src="logo.png" style="height: 40px;border-radius: 110px;width: 50px;"></a>
+          <a class="navbar-brand" href="main_page.html" style="width: 200px; font-size: large; text-decoration: none;"> <!-- <img src="logo.png" style="height: 40px;border-radius: 110px;width: 50px;">--></a> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,7 +52,7 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="#">Speakers</a></li>
                   <li><a class="dropdown-item" href="#">Partner Organizations</a></li>
-                  <li><a class="dropdown-item" href="team.html">Our team</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Founders</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -73,107 +77,117 @@
 <!-- TFF poster -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-center" data-aos="fade-up">
-      <span id="timer" class="timer"></span><br><br>
+      <!-- Timer -->
+      <br><br>
+      <div id="clockdiv" data-aos="fade-up">
+        <div><span class="days"></span><div class="smalltext">Days</div></div>
+        <div><span class="hours"></span><div class="smalltext">Hours</div></div>
+        <div><span class="minutes"></span><div class="smalltext">Minutes</div></div>
+        <div><span class="seconds"></span><div class="smalltext">Seconds</div></div>
+      </div> 
+      <br><br>
       <a href="http://bit.ly/tffrep2021" class="btn-get-started scrollto" style="text-decoration: none;">Register now</a>
     </div>
   </section>
+
+
   
 <!-- SDGs -->
 <br><br>
-<h1 class="text-center"><u style="color: rgb(4, 5, 88); text-decoration: none;">SDGs</u></h1>
+<h1 class="text-center"><u style="color: white; text-decoration: none;">Sustainable Development Goals</u></h1>
 <br><br>
-<div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 10px;">
+<div class="row row-cols-1 row-cols-md-6 g-4" style="padding: 10px;" data-aos="fade-down">
   <div class="col">
-    <div class="card bg-clr">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Good Health</h5>
+        <img src="SDGs/1.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card bg-clr1">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Quality Education</h5>
+        <img src="SDGs/2.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card bg-clr2">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Affordable & Clean Energy</h5>
+        <img src="SDGs/3.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card bg-clr1">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Industry & Infrastructure</h5>
+        <img src="SDGs/4.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card bg-clr">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Clean water & Sanitation</h5>
+        <img src="SDGs/5.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card bg-clr3">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Sustainable cities</h5>
+        <img src="SDGs/6.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
 </div>
 
-<div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 10px;">
+<div class="row row-cols-1 row-cols-md-6 g-4" style="padding: 10px;" data-aos="fade-down">
   <div class="col">
-    <div class="card bg-clr4">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Climate Action</h5>
+        <img src="SDGs/7.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card bg-clr2">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Life below water</h5>
+        <img src="SDGs/8.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card bg-clr1">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Responsible Consumption & Production</h5>
+        <img src="SDGs/9.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card bg-clr2">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Life on land</h5>
+        <img src="SDGs/10.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card bg-clr3">
       <div class="card-body">
-        <h5 class="card-title text-center">Peace, Justice, and Strong institutions</h5>
+        <img src="SDGs/11.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card bg-clr">
+    <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center">Partnership for the goal</h5>
+        <img src="SDGs/12.jpg" style="width: 150px;">
       </div>
     </div>
   </div>
 </div>
 <!-- About -->
 <br><br>
-<h1 class="text-center" id="about"><u style="color: rgb(4, 5, 88); text-decoration: none;">About Us</u></h1>
+<h1 class="text-center" id="about"><u style="color: white; text-decoration: none;">About Us</u></h1>
 <br><br>
 <div class="row row-cols-1 row-cols-md-2 g-4" style="padding: 20px;">
   <div class="col">
@@ -183,62 +197,92 @@
   </div>
   <div class="col">
     <div class="card">
-          <h5><b><br>TEAI - TOE's Earth and Space Initiative</b></h5>
-          <p>TEAI is the Science and Technology Initiative of TOE with the aim of protecting the Earth’s Environment and reaching for the horizons by spreading the wings of knowledge and making aware every individual out there about Earth and Space. The motto behind this Initiative of TOE is introducing the youth, to the emerging and futuristic fields, which is a combination of Earth and Space.  TEAI conducts various Earth and Space Awareness programs in schools and introduces the students to things like outer space, how satellites work, and monitoring climate change.</p>
-          <h5><b><br>TFF - The Future Forward</b></h5>
-          <p> The Future Forward is an International Summit being organized to expose the youth and the participants to modern topics covering Future trends of Earth and Space. The summit aims to raise awareness and educate the participants by intuitive discussion and workshops led by experts of the different futuristic fields.</p>
+          <h5><b><br><i>TEAI - TOE's Earth and Space Initiative</i></b></h5>
+          <p data-aos="zoom-out-down">TEAI is the Science and Technology Initiative of TOE with the aim of protecting the Earth’s Environment and reaching for the horizons by spreading the wings of knowledge and making aware every individual out there about Earth and Space. <br><br>The motto behind this Initiative of TOE is introducing the youth, to the emerging and futuristic fields, which is a combination of Earth and Space.  TEAI conducts various Earth and Space Awareness programs in schools and introduces the students to things like outer space, how satellites work, and monitoring climate change.</p>
+          <h5><b><br><i>TFF - The Future Forward</i></b></h5>
+          <p data-aos="zoom-out-down"> The Future Forward is an International Summit being organized to expose the youth and the participants to modern topics covering Future trends of Earth and Space. The summit aims to raise awareness and educate the participants by intuitive discussion and workshops led by experts of the different futuristic fields.</p>
         </div>
   </div>
 </div>
  
 <!-- Expected outcomes-->
 <br><br>
-<h1 class="text-center"><u style="color: rgb(4, 5, 88); text-decoration: none;">Expected Outcomes of the Summit</u></h1>
+<h1 class="text-center"><u style="color:white; text-decoration: none;">Expected Outcomes of the Summit</u></h1>
 <br><br>
 <div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 10px;">
   <div class="col">
     <div class="card">
       <div class="card-body bg-clr">
-        <h5 class="card-title text-center">Research</h5>
-        <p class="card-text" style="color: white;"><br>We expect to lay the groundwork for a strong foundation to help facilitate a sustainable way of living through small and big solutions to the issues discussed in the summit.<br></p>
+        <h5 class="card-title text-center"><i>Research</i></h5>
+        <p class="card-text"><br>We expect to lay the groundwork for a strong foundation to help facilitate a sustainable way of living through small and big solutions to the issues discussed in the summit.<br></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
       <div class="card-body bg-clr1">
-        <h5 class="card-title text-center">Education</h5>
-        <p class="card-text" style="color: white;"><br>The summit covers an array of modern topics in the fields of Environment, Earth, and Space. We believe that educating the youth and raising awareness is essential to achieve a sustainable way of living.<br></p>
+        <h5 class="card-title text-center"><i>Education</i></h5>
+        <p class="card-text"><br>The summit covers an array of modern topics in the fields of Environment, Earth, and Space. We believe that educating the youth and raising awareness is essential to achieve a sustainable way of living.<br></p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
       <div class="card-body bg-clr2">
-        <h5 class="card-title text-center">Collaboration</h5>
-        <p class="card-text" style="color: white;">TEAI through the TFF summit 2021 strives to collaborate with environmental organizations and technological industry giants to come up with creative innovations in an effort to ensure the survival of species of the Earth in their future.</p>
+        <h5 class="card-title text-center"><i>Collaboration</i></h5>
+        <p class="card-text">TEAI through the TFF summit 2021 strives to collaborate with environmental organizations and technological industry giants to come up with creative innovations in an effort to ensure the survival of species of the Earth in their future.</p>
       </div>
     </div>
   </div>
 </div>
 <br><br>
 <!-- Footer -->
-<footer id="contact" style="background-color: rgb(4, 5, 88); color: white;">
-    <div class="text-center">
-      <br><br>
-      <h3> <u>Contact Us</u> </h3>
-      <p class="text-center"><i class="fas fa-phone-volume"></i> (+91)9599490594/ (+91)8377820991</p>
-      <p class="text-center"><i class="fas fa-envelope-square"></i> teai@tearsoftheearth.org</p>
-<br>
+<footer class="footer-distributed" id="contact" style="background-color: black;">
+ 
+		<div class="footer-left">
+ 
+		<h3>The Future<span> Forward</span></h3>
+ 
+		<p class="footer-links">
+		<a href="#">Home</a>
+	·
+		<a href="#">About</a>
+	·
+		<a href="#">Schedule</a>
+	·
+		<a href="#">TOE</a>
+	·
+		<a href="#">TEAI</a>
+		</p>
+ 
+		<p class="footer-company-name">The Future Forward &copy; 2021</p>
+		</div>
+ 
+		<div class="footer-center">
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>(+91)9599490594/ (+91)8377820991</p>
+		</div>
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:teai@tearsoftheearth.org">teai@tearsoftheearth.org</a></p>
+		</div>
+		</div>
+		<div class="footer-right">
+		<p class="footer-company-about">
+		<span>About</span>
+    The Future Forward is an International Summit being organized to expose the youth and the participants to modern topics covering Future trends of Earth and Space.
+		</p>
+		<div class="footer-icons">
       <i class="fab fa-instagram"></i> 
       <i class="fab fa-facebook"></i> 
       <i class="fab fa-reddit"></i> 
       <i class="fab fa-whatsapp"></i> 
       <i class="fab fa-telegram"></i> 
       <i class="fab fa-linkedin"></i> 
-      <br><br>
-    </div>
-</footer>
+		</div>
+		</div>
+		</footer>
 
   </body>
 </html>
@@ -246,25 +290,41 @@
 
 
 <script>
-var countDownDate = new Date("Feb 12, 2021").getTime();
+var deadline = 'Feb 12 2021 18:40:18 GMT-0400';
+function time_remaining(endtime){
+	var t = Date.parse(endtime) - Date.parse(new Date());
+	var seconds = Math.floor( (t/1000) % 60 );
+	var minutes = Math.floor( (t/1000/60) % 60 );
+	var hours = Math.floor( (t/(1000*60*60)) % 24 );
+	var days = Math.floor( t/(1000*60*60*24) );
+	return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
+}
+function run_clock(id,endtime){
+	var clock = document.getElementById(id);
+	
+	// get spans where our clock numbers are held
+	var days_span = clock.querySelector('.days');
+	var hours_span = clock.querySelector('.hours');
+	var minutes_span = clock.querySelector('.minutes');
+	var seconds_span = clock.querySelector('.seconds');
 
-var x = setInterval(function() {
+	function update_clock(){
+		var t = time_remaining(endtime);
+		
+		// update the numbers in each part of the clock
+		days_span.innerHTML = t.days;
+		hours_span.innerHTML = ('0' + t.hours).slice(-2);
+		minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
+		seconds_span.innerHTML = ('0' + t.seconds).slice(-2);
+		
+		if(t.total<=0){ clearInterval(timeinterval); }
+	}
+	update_clock();
+	var timeinterval = setInterval(update_clock,1000);
+}
+run_clock('clockdiv',deadline);
+</script>
 
-  var now = new Date().getTime();
-    
-  var distance = countDownDate - now;
-    
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "TFF Summit";
-  }
-}, 1000);
+<script>
+  AOS.init();
 </script>
