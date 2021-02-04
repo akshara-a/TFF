@@ -1,3 +1,8 @@
+/*font*/
+body{
+  font-family: 'Lemonada', cursive;
+}
+
 /* Navbar */
 
   
@@ -103,7 +108,6 @@
   }
       
   #hero .btn-get-started {
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 25px;
     letter-spacing: 2px;
@@ -227,7 +231,6 @@ p {
   max-width: 300px;
   margin: auto;
   text-align: center;
-  font-family: arial;
 }
 
 .button {
@@ -257,15 +260,8 @@ p {
 }
 
 /* Timer */
-.timer{
-  background-color: white;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-    font-size: 20px;
-}
+
 #clockdiv{
-	font-family: sans-serif;
 	color: #fff;
 	display: inline-block;
 	font-weight: 100;
@@ -433,7 +429,7 @@ p {
 @media (max-width: 880px) {
  
 	.footer-distributed{
-		font: bold 14px sans-serif;
+		font: bold 14px;
 	
 	}
  
@@ -455,7 +451,6 @@ p {
 h1{
     background-color: black;
     padding: 10px;
-    font-style: italic;
 }
 
 /*Expected outcomes*/
@@ -472,4 +467,13 @@ h1{
 .bg-clr2{
   border: 2px solid black;
   border-radius: 10px;
+}
+@media (max-width: 468px){
+#clockdiv{
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 13px;
+}
 }
