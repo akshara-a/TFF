@@ -411,7 +411,8 @@ p {
 	color:  #92999f;
 	font-size: 13px;
 	font-weight: normal;
-	margin: 0;
+  margin: 0;
+  text-align: center;
 }
  
 .footer-distributed .footer-company-about span{
@@ -419,7 +420,8 @@ p {
 	color:  #ffffff;
 	font-size: 14px;
 	font-weight: bold;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
  
 .footer-distributed .footer-icons{
