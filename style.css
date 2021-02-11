@@ -1,3 +1,8 @@
+/* HTML */
+html, body{
+  overflow-x: hidden;
+}
+
 /*font*/
 body{
   font-family: 'Merriweather', serif;
@@ -68,7 +73,7 @@ body{
 @media only screen and (min-width: 768px){
 #hero{
     width: 100%;
-    height: 120vh;
+    height: 80vh;
     background: url("background.jpg") center center;
     background-size: cover;
     position: relative;
@@ -80,8 +85,8 @@ body{
   @media (max-width: 468px){
     #hero{
     width: 100%;
-    height: 120vh;
-    background: url("bg-mobile.png") center center;
+    height: 80vh;
+    background: url("bg-mobile.jpg") center center;
     background-size: cover;
     position: relative;
     margin-top: 0px;
@@ -154,9 +159,6 @@ body{
     line-height: 24px;
     margin-bottom: 30px;
   }
-  }
-  body {
-    overflow-x: hidden; /* Hide scrollbars */
   }
 /*SDGs*/
 .card {
@@ -280,7 +282,9 @@ p {
 	font-weight: 100;
 	text-align: center;
   font-size: 35px;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -289,6 +293,7 @@ p {
 	border-radius: 3px;
 	background: black;
 	display: inline-block;
+  margin-right: 5px;
 }
 
 #clockdiv div > span{
@@ -491,11 +496,12 @@ h1{
 @media (max-width: 468px){
 #clockdiv{
 	color: #fff;
-	display: inline-block;
 	font-weight: 100;
 	text-align: center;
   font-size: 13px;
-  margin-bottom: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 }
 
